@@ -82,7 +82,7 @@ const displayQuiz = (data) => {
  let btnSubmit = document.querySelector("#submit");
   btnSubmit.addEventListener('click', () => {
   if (answers.length < 6) {
-  return 1;
+  return;
   }
   quizTimer(true);
   answersContainer.innerHTML = `<div class="my-4">
@@ -114,7 +114,7 @@ const displayQuiz = (data) => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
       "results",
