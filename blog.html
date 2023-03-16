@@ -18,23 +18,20 @@
     />
     <title>Quiz Hero > Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./index.js" defer></script>
-
-    <!-- You don't need to change noChange.js file. It's fine -->
-    <script src="./noChange.js" defer></script>
-    <!-- You don't need to change noChange.js file. It's fine -->
-
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            fontFamily: {
-              common: ["Rubik", "sans-serif"],
-            },
-          },
-        },
-      };
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
 <body>
     <!-- Header/Navbar section start -->
@@ -49,9 +46,82 @@
           </div>
           <div></div>
         </nav>
-      </header>
+    </header>
+    <main class="container mx-auto">
+      <section id="questionContainer" class="container">
+
+        <!-- question 1  -->
+        <div class="questionAndAnswer  border hover:border-slate-400 duration-500 rounded-lg p-3 mt-3 hover:shadow bg-slate-50">
+          <div class="question text-xl font-medium">
+            1. What are the difference between map(), filter() and forEach() in Javascript ?
+          </div>
+          <div class="answer rounded-md bg-gray-200 p-2 mt-2">
+            <h1 class="font-medium">map( )</h1>
+            map( ) creates a new array for every array element. map( ) calls a function once for each element in an array. map( ) does not execute the function for empty elements. map( ) does not change the original array.
+            <h1 class="font-medium">filter( )</h1>
+            filter() makes a new array of elements that pass condition. It does not execute for empty elements. filter() method not change the original array.
+            <h1 class="font-medium">forEach( )</h1>
+            forEach() method execute for every array elements but it returns nothing or undefined.It aslo does not modify the original array.
+
+
+          </div>
+        </div>
+        <!-- question 2  -->
+        <div class="questionAndAnswer  border hover:border-slate-400  duration-500 rounded-lg p-3 mt-3 hover:shadow bg-slate-50">
+          <div class="question text-xl font-medium">
+            2. What are the difference between LocalStorage and SessionStorage ?
+          </div>
+          <div class="answer rounded-md bg-gray-200 p-2 mt-2">
+            The methods of localstorage and sessionstorage is almost same but the main difference is durability of stored data.
+            Data of the localstorage never be expired but for the sessionstorage data is expired or removed on tne closing of current tab. Another differencese 
+            is capacity of localstorage is larger then sessionstorage.
+          </div>
+        </div>
+        <!-- question 3  -->
+        <div class="questionAndAnswer border hover:border-slate-400 duration-500 rounded-lg p-3 mt-3 hover:shadow bg-slate-50">
+          <div class="question text-xl font-medium">
+            3. What is event loop ?
+          </div>
+          <div class="answer rounded-md bg-gray-200 p-2 mt-2">
+            Event loop is the system of managing the order in which tasks are executed in the code. It is a part of asynchronous programming model.
+            It continuously monitors the execution stack and the task queue. When the execution stack is empty, the event loop looks at the task queue and picks the next task to be executed.
+
+          </div>
+        </div>
+
+        <!-- question 4  -->
+        <div class="questionAndAnswer border hover:border-slate-400 duration-500 rounded-lg p-3 mt-3 hover:shadow bg-slate-50">
+          <div class="question text-xl font-medium">
+            4. What is event loop ?
+          </div>
+          <div class="answer rounded-md bg-gray-200 p-2 mt-2">
+            Event loop is the system of managing the order in which tasks are executed in the code. It is a part of asynchronous programming model.
+            It continuously monitors the execution stack and the task queue. When the execution stack is empty, the event loop looks at the task queue and picks the next task to be executed.
+
+          </div>
+        </div>
+
+        <!-- question 5  -->
+        <div class="questionAndAnswer border hover:border-slate-400 duration-500 rounded-lg p-3 mt-3 hover:shadow bg-slate-50">
+          <div class="question text-xl font-medium">
+            5. What is event loop ?
+          </div>
+          <div class="answer rounded-md bg-gray-200 p-2 mt-2">
+            Event loop is the system of managing the order in which tasks are executed in the code. It is a part of asynchronous programming model.
+            It continuously monitors the execution stack and the task queue. When the execution stack is empty, the event loop looks at the task queue and picks the next task to be executed.
+
+          </div>
+        </div>
+        
+        
+
+
+
+      </section>
+    </main>
     
 </body>
+    <style>*{font-family: 'Rubik', sans-serif;}</style>
     <script>
         document.getElementById('backBtn').addEventListener('click',()=>{
             location.href='index.html'
