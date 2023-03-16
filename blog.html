@@ -62,6 +62,8 @@
             filter() makes a new array of elements that pass condition. It does not execute for empty elements. filter() method not change the original array.
             <h1 class="font-medium">forEach( )</h1>
             forEach() method execute for every array elements but it returns nothing or undefined.It aslo does not modify the original array.
+            <h1 class="font-medium">find( )</h1>
+            The find() method returns the value of the first element that mached the condition. The find() method executes a function for each array element. It returns undefined if no elements are matched.
 
 
           </div>
@@ -69,12 +71,14 @@
         <!-- question 2  -->
         <div class="questionAndAnswer  border hover:border-slate-400  duration-500 rounded-lg p-3 mt-3 hover:shadow bg-slate-50">
           <div class="question text-xl font-medium">
-            2. What are the difference between LocalStorage and SessionStorage ?
+            2. What are the difference between LocalStorage, SessionStorage and cookies ?
           </div>
           <div class="answer rounded-md bg-gray-200 p-2 mt-2">
             The methods of localstorage and sessionstorage is almost same but the main difference is durability of stored data.
             Data of the localstorage never be expired but for the sessionstorage data is expired or removed on tne closing of current tab. Another differencese 
-            is capacity of localstorage is larger then sessionstorage.
+            is capacity of localstorage is larger then sessionstorage. The storage of both is browser only <br>
+            Cookies are small text of data like a username and password that are used to identify computer. Specific cookies known as HTTP cookies used to identify specific users to improve web browsing experience.
+            The storage of cookies id server and browser. It can be sent by request and capacity is almost 4kb. It can be expired manually.
           </div>
         </div>
         <!-- question 3  -->
@@ -88,30 +92,29 @@
 
           </div>
         </div>
-
         <!-- question 4  -->
         <div class="questionAndAnswer border hover:border-slate-400 duration-500 rounded-lg p-3 mt-3 hover:shadow bg-slate-50">
           <div class="question text-xl font-medium">
-            4. What is event loop ?
+            4. What is the use of quizTimer( ) function in this web application ?
           </div>
           <div class="answer rounded-md bg-gray-200 p-2 mt-2">
-            Event loop is the system of managing the order in which tasks are executed in the code. It is a part of asynchronous programming model.
-            It continuously monitors the execution stack and the task queue. When the execution stack is empty, the event loop looks at the task queue and picks the next task to be executed.
-
+            It works to display the "Time Consumed" for answering the quize questions. There is a "timer" named
+             nested setIntercal function which can change the color of time whis is showing based on condition. 
           </div>
-        </div>
+        </div>       
 
         <!-- question 5  -->
-        <div class="questionAndAnswer border hover:border-slate-400 duration-500 rounded-lg p-3 mt-3 hover:shadow bg-slate-50">
+        <div class="questionAndAnswer border hover:border-slate-400 duration-500 rounded-lg p-3 mt-3 mb-5 hover:shadow bg-slate-50">
           <div class="question text-xl font-medium">
-            5. What is event loop ?
+            5. What is the use of chooseQuiz( ) function ?
           </div>
           <div class="answer rounded-md bg-gray-200 p-2 mt-2">
-            Event loop is the system of managing the order in which tasks are executed in the code. It is a part of asynchronous programming model.
-            It continuously monitors the execution stack and the task queue. When the execution stack is empty, the event loop looks at the task queue and picks the next task to be executed.
-
+           This function display the answer of a question whateever it is right or wrong before submit. It aslo
+           maintain the serial of answered question. If the first question ansteded by a user at last yet this function bring it at the first position.
           </div>
         </div>
+
+
         
         
 
